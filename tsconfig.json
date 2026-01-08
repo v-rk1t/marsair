@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@locators/*": ["locators/*"],
+      "@data/*": ["data/*"],
+      "@fixtures/*": ["fixtures/*"]
+    }
+  },
+  "compileOnSave": true
+}
