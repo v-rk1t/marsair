@@ -1,0 +1,15 @@
+services:
+  playwright:
+    container_name: marsair
+    image: playwright
+    build: .
+    init: true
+    ipc: host
+    working_dir: /app
+
+    volumes:
+      - .:/app
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+
+    command: npm run test
